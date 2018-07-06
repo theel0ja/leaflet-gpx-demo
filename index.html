@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Polyfills for IE -->
+    <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=default,fetch,Promise"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha256-NJWeQ+bs82iAeoT5Ktmqbi3NXwxcHlfaVejzJI2dklU=" crossorigin="anonymous" />
+
+    <!-- SEO -->
+    <title>leaflet-gpx-demo</title>
+
+    <!-- CSS -->
+    <style>
+      #map {
+        height: 640px;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+
+    <!-- Your content -->
+    <div class="container">
+      <h1>leaflet-gpx-demo</h1>
+
+      <div id="map"></div>
+
+      <form method="get" style="padding-top: 25px;">
+        <div class="form-group row">
+          <div class="col-md-7">
+            <input type="number" name="id" placeholder="ID of the GPX track" class="form-control" />
+          </div>
+          <div class="col-md-1">
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <!-- JS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.1/leaflet.css" integrity="sha256-iYUgmrapfDGvBrePJPrMWQZDcObdAcStKBpjP3Az+3s=" crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.3.1/leaflet.js" integrity="sha256-CNm+7c26DTTCGRQkM9vp7aP85kHFMqs9MhPEuytF+fQ=" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-gpx/1.4.0/gpx.min.js" integrity="sha256-W5DjMP4E+A9whQ3XJjAfXkM6999RFwu5u7Bh4dnB0n8=" crossorigin="anonymous"></script>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
