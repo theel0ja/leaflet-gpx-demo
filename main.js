@@ -58,6 +58,13 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 const gpxId = getParameterByName("id");
 
 if(gpxId) {
+  // Add "View on openstreetmap.org" button
+  // FIXME: Wtf only edit works
+  /* const viewOnOsmButton = document.getElementById("btn-view-on-osm");
+  viewOnOsmButton.href = `https://www.openstreetmap.org/trace/${gpxId}/edit`;
+  viewOnOsmButton.style.visibility = "visible"; */
+
+  // Add data to map
   fetchGpxData(gpxId)
     .then((gpx) => {
       new L.GPX(gpx, {async: true}).on('loaded', function(e) {
